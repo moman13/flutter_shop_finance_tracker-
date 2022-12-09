@@ -7,22 +7,9 @@ import 'package:gsheets/gsheets.dart';
 class GoogleSheetApi {
   static const _credentials = r''' 
 
-        {
-          "type": "service_account",
-          "project_id": "shop-370018",
-          "private_key_id": "240a1c8c5319c47537bdb82c71384b670f04e44c",
-          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCyDG3JRQVaHvRO\nC7HiOb9MqyTLKUuOlk2kPDo35+4fWtxWgTkVyT+opgwWLdMWnZro7RNoHKGgUcZe\n1Lb5oed5Ll5CO8A7g0AeFsHw9c9eMnIEPjLI6zgfOKla/el123Xen4GDW2fRi/eU\nQs8h+zpboIq1etnuID9VT0jskO4ASB8PZUJ3cM/XLVJUIiUkPOj+T5rxbmtwluhT\nnXoXiqHM0Fsiz8KWzbq3I4/NQ5vih7Qjjr7QeN3rcwGDhiOkN5V6tZL21CYXMezq\n8KATUSP9WH/9NgR3cKi074BYQQhSk2HPJzHvjmYwpgWXGLzQ+ltkBGfq3oEDqWW7\nh0PrrcRbAgMBAAECggEAKQ72rkhNYKfsvKazwbCBbeO1m2gNdXcxtmLxJf1FC1P/\npa8tA9oh5PlNpjuxBvEXTQmGxSZ9GyRgc3PoMg7k+yv3Lpzqyo6M1aN32+JDjLxj\nUJkrSuv7SC/f1gzhrn0KZGkyC6Gjgk4drMHvVC3EGmceNZV79g7XrAuZjHwrdkLI\n8p9OxkmKrpKiFtZib3QVl01TfC6Dp+6HA4rxyjX6b60kBJ9qjt/nK77Y77WcXy9R\nJC+RnfSFmX1XGejJub5L5l2Sm0X9Cn75fjlOjftq0T1MHQ6zdjbtpgITWXaATx1r\nBvsJaTdssgevELpNatTNpLPBWFib4RanqfYERS/LkQKBgQDZq2efwPMAjzTsLHUE\nM4hczVyqr3nRZ8yfCUSJuswh6o4OTVKgWlyCYoleGgc7rxvUB9Z728+XRFMDtXme\nL+bylO9JlFm5rvoPtzSKcKtTiaZNV1PT3DUDLjHZTRL0mYZYCztSTgKek0fGUvEw\nYyZLf9l2U/rVaHNfoNYvCnamiQKBgQDRZuZjc8wI5+dQMamMxuy71ZBsrvD/FdAu\nl+DRg3zZh/sgnC02UiZ78LIIZK4exMwzy7AIUhyWc9n4579Ruvv/dVM4WLpp9a0Q\ny4vC2WmDvaIVM679wbqXGGeLk4q80KbTUQF213uWZihHFck6usuz/QK2b75zj2Dm\nmqegKosawwKBgCrU768f6LFTfLZ8iQoqmcqpHnL31KDALCOfTz1K5KBH52wpCvlC\nzrFZcm5x8Lpt2qv+XtZAirjZWPyB2UynYGqbo/p2lrFTHSG6izwyr4PgsjjF1lj6\nG/RkQqrf37sB+s2YaDPp5doOYTFFYPCEkiSJI+GE5PbZdtp6a6sWBAMBAoGAaZ9u\nvGFvXFqlGZVDQYghZwltRPTlCLXXAXmIZAXf1tW5PRSp1YmQcdnR41vtXAXGPqYS\nT9AjLVyYaO10WmRnsc5bQMO4m7PZLOyOvaTujQ39EJa2QLcUSBx+NjAgvea9Dz//\n7hL4+r7iuCBsFRydnVcUpDMvLJj4trjxrl9nNQMCgYBOas3otVdfVzC5BWaKqUze\n0BBEccHNE3ssE7LV8jrbHLJqWlA/Gwvp5bzbwgz7p2DrTsCVKXvPE2YVbiWIOEZ1\ndIPL+1ycJh183/w7tX++M7HUmzqSTHF6LojwKWRYYTdpvB/cHXbzGmxh58Mac63J\nQCqGLSIkYpiUTKY08QuGRw==\n-----END PRIVATE KEY-----\n",
-          "client_email": "flutter-shop-tracker-expensive@shop-370018.iam.gserviceaccount.com",
-          "client_id": "111569452627370645842",
-          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-          "token_uri": "https://oauth2.googleapis.com/token",
-          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/flutter-shop-tracker-expensive%40shop-370018.iam.gserviceaccount.com"
-        }
-        
 
         ''';
-  static const _spreadsheetId = "1QbS3P_6BZ6RgW7fv_K6kut5_89llMsxw68eodloPpq0";
+  static const _spreadsheetId = "";
   static final _gsheets = GSheets(_credentials);
   static Worksheet? _worksheet;
 
